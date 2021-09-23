@@ -45,7 +45,7 @@ class HomeNews(MyMixin, ListView):
     model = News
     template_name = 'blog/home_news_list.html'
     context_object_name = 'news'
-    mixin_prop = 'hello world'
+    mixin_prop = ''
     paginate_by = 2
 
     def get_context_data(self, *, object_list=None, **kwargs):
